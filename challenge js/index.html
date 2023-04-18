@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>m3c-password-generator</title>
+	<style type="text/css">
+		input[type=number]{
+			width: 300px;
+			height: 25px;
+			font-size: 20px;
+			color: blue;
+			margin: 20px;
+			border-left: none;
+			border-top: none;
+			border-right: none;
+			outline: None;
+		}
+
+		.choice{
+			margin: 10px 0 20px 10px;
+		}
+
+		button{
+			font-size: 20px;
+			padding: 5px 10px;
+			background-color: blue;
+			color: white;
+			border: None;
+		}
+
+		button:hover{
+			background-color: green;
+		}
+
+		.text-password{
+			color: blue;
+			margin-left: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+
+		<input type="number" placeholder="size of PASSWORD" class='texte'> 
+		<div class='container'><span>The password is :<br> </span><span class="text-password"></span></div>
+		<div class="choice">
+			<span>Majuscule  :<input type="checkbox" checked class="Majuscule"><span><br>
+			<span>Minuscules  :<input type="checkbox" checked class="Minuscules"><span><br>
+			<span>Numeriques  :<input type="checkbox" checked class="Numeriques"><span><br>
+			<span>Caractere Speciaux  :<input type="checkbox" checked class="speciaux"><span><br>
+		</div>
+		<button class="generate">generate</button>
+	</div>
+	<script type="text/javascript" src="password-generator.js"></script>
+</body>
+</html>
